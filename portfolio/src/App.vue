@@ -2,18 +2,22 @@
   <div id="app">
     <Header/>
     <ConsolePrint/>
+    <Cards/>
+    
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import ConsolePrint from './components/ConsolePrint.vue'
+import Cards from './components/Cards.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    ConsolePrint
+    ConsolePrint,
+    Cards
   }
 }
 </script>
@@ -24,11 +28,12 @@ export default {
 @font-face {
 	font-family: 'Iosevka Web';
 	font-display: swap;
-	font-weight: 500;
+	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-medium-30f62ff86a3c64ec77e6474a7419d1c4.woff2) format('woff2'), url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-medium-f2eae4a506a51b3625b7b2ad064eb1ad.woff) format('woff'), url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-medium-d14d7a475cf2b699ff8a98d1562e4dd9.ttf) format('truetype');
+	src: url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-regular-589977d6df595706480452c885f3d06a.woff2) format('woff2'), url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-regular-78fca4b917961a292915f8349435987b.woff) format('woff'), url(https://typeof.net/Iosevka//_next/static/chunks/fonts/iosevka-regular-f06a8fd6abee6bf78a2940a1ba51616a.ttf) format('truetype');
 }
+
 #app {
   font-family: Iosevka Web;
   -webkit-font-smoothing: antialiased;
