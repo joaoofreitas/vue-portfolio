@@ -49,5 +49,6 @@ html, body {
     width:100%;
     padding:0;
     background-color: #282828;
+    color: whitesmoke;
 }
 </style>

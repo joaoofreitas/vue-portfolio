@@ -1,7 +1,7 @@
 <template>
     <div>
         <img src="../assets/photo.jpg" class="avatar"/>
-        <p> João Freitas </p>
+        <h1> João Freitas </h1>
     </div>
 </template>
 
@@ -13,10 +13,10 @@
     vertical-align: left;
     width: 220px;
     height: 220px;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
-p {
+h1 {
     font-size: 24px;
     color: #ebdbb2
 }

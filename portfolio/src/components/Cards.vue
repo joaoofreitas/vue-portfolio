@@ -2,26 +2,62 @@
     <section class="card-list">
         <div class="card">
             <header class="card-header">
-                <p>{{skills.Programming[0]}}</p>
-                <h2> </h2>
+                <a>{{skills.DevOps[0]}}</a>
+                <h1>{{skills.DevOps[1]}}</h1>
             </header>
         </div>
         <div class="card">
             <header class="card-header">
-                <p>{{skills.Programming[0]}}</p>
-                <h2> </h2>
+                <a>{{skills.DevOps[0]}}</a>
+                <h1>{{skills.DevOps[2]}}</h1>
             </header>
         </div>
         <div class="card">
             <header class="card-header">
-                <p>{{skills.Programming[0]}}</p>
-                <h2> </h2>
+                <a>{{skills.OS[0]}}</a>
+                <h1>{{skills.OS[1]}}</h1>
             </header>
         </div>
         <div class="card">
             <header class="card-header">
-                <p>{{skills.Programming[0]}}</p>
-                <h2> </h2>
+                <a>{{skills.Programming[0]}}</a>
+                <h1>{{skills.Programming[1]}}</h1>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a>{{skills.Programming[0]}}</a>
+                <h1>{{skills.Programming[2]}}</h1>
+            </header>
+        </div>
+                <div class="card">
+            <header class="card-header">
+                <a>{{skills.Programming[0]}}</a>
+                <h1>{{skills.Programming[3]}}</h1>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a>{{skills.Programming[0]}}</a>
+                <h1>{{skills.Programming[4]}}</h1>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a>{{skills.Frameworks[0]}}</a>
+                <h1>{{skills.Frameworks[1]}}</h1>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a>{{skills.Frameworks[0]}}</a>
+                <h1>{{skills.Frameworks[2]}}</h1>
+            </header>
+        </div>
+        <div class="card">
+            <header class="card-header">
+                <a>{{skills.Frameworks[0]}}</a>
+                <h1>{{skills.Frameworks[3]}}</h1>
             </header>
         </div>
     </section>
@@ -34,7 +70,7 @@ export default {
         return {
             skills:{
                 DevOps: ['DevOps','Docker', 'AWS EC2'],
-                Programming: ['Programming','Python', 'C++','C', 'Javascript', 'Go'], 
+                Programming: ['Programming','Python', 'C/C++', 'Javascript', 'Go'], 
                 Frameworks: ['Frameworks','NodeJS', 'Vue' , 'React'],
                 OS : ['OS','GNU/Linux']
             }
@@ -85,13 +121,11 @@ export default {
     transform: translateY(-1rem);
 }
 
-.card:hover~.card {
+.card:hover~.card{
     transform: translateX(130px);
 }
 
 .card:not(:first-child) {
     margin-left: -130px;
 }
-
-
 </style>
