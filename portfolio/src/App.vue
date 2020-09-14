@@ -50,6 +50,4 @@ html, body {
     padding:0;
     background-color: #282828;
 }
-
-
 </style>
