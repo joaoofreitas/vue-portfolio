@@ -2,22 +2,21 @@
   <div id="app">
     <Header/>
     <ConsolePrint/>
-    <Cards/>
-    
+    <CardsList/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import ConsolePrint from './components/ConsolePrint.vue'
-import Cards from './components/Cards.vue'
+import CardsList from './components/CardsList.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     ConsolePrint,
-    Cards
+    CardsList
   }
 }
 </script>
