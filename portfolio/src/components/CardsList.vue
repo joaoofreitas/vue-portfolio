@@ -4,6 +4,9 @@
         <Cards/>
         <Cards/>
         <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
     </section>
 </template>
 
@@ -41,10 +44,10 @@ export default {
     height: 10px;
 }
 
-.card-list::-webkit-slider-thumb {
+.card-list::-webkit-scrollbar-thumb {
     background: #282828;
     border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,1.25);
+    box-shadow: inset 2px 2px 2px hsla(0,0%,75%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
 
 .card-list::-webkit-scrollbar-track{
