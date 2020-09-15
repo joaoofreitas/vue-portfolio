@@ -16,11 +16,12 @@ export default {
 
 <style>
 .vue-typer .custom.char.typed {
-  color: #d79921;
+  font-size: 20px;
+  color: #fbf1cf
 }
 
 .vue-typer .custom.caret {
   text-decoration: overline;
-  background-color: #d79921;
+  background-color: #bdae93;
 }
 </style>

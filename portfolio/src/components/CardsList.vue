@@ -1,18 +1,30 @@
 <template>
     <section class="card-list">
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
+        
+        <Cards  title='Card Skills' 
+                skill="Programming" 
+                skillColor="#458588" 
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+        
+        <Cards  title='Card Skills' 
+                skill="Server Management"  
+                skillColor="#d79921"
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+        
+        <Cards  title='Card Skills' 
+                skill="Electronics" 
+                skillColor="#cc241d" 
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+        
+        <Cards  title='Card Skills' 
+                skill="Projects"  
+                skillColor="#689d6a"
+                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
     </section>
 </template>
 
 <script>
 import Cards from './Card.vue'
-
 
 export default {
     name: 'CardsList',
@@ -34,6 +46,7 @@ export default {
 
 <style>
 .card-list {
+    justify-content: center;
     display: flex;
     padding: 3rem;
     overflow-x: scroll;

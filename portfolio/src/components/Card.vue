@@ -1,23 +1,36 @@
 <template>
         <div class="card">
             <header>
-                <a>titleprops</a>
-                <h1>skillprops</h1>
-                content lorem ipsum stuff whatever dummy text developing
+                <a>{{title}}</a>
+                <h1 :style="h1Props" >{{skill}}</h1 >
+                {{content}}
             </header>
+            <div class='bottom-card'>
+                Card Bottom
+            </div>
         </div>
 </template>
 
 
 <script>
+
+
 export default {
-    
+    props: ['title', 'skill','skillColor', 'content', 'bar-percentage', 'tags'], //need to get this better
+    computed: {
+        h1Props() {return {'--text-color': this.skillColor}}
+    }
 }
 </script>
 
 <style>
+
+.card:hover h1{
+    color: var(--text-color);
+    transition: .3s;
+}
 .card {
-    display: flex;
+    display: flex; 
     position: relative;
     flex-direction: column;
     height: 350px;
@@ -30,6 +43,9 @@ export default {
     box-shadow: -1rem 0 3rem #000;
 
     transition: .2s;
+
+    outline:  1px solid #ebdbb2;
+    outline-offset: -10px ;
 }
 .card:hover {
     transform: translateY(-1rem);
@@ -41,5 +57,11 @@ export default {
 
 .card:not(:first-child) {
     margin-left: -130px;
+}
+
+.bottom-card {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
 }
 </style>

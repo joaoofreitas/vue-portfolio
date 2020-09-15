@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class ="header">
         <img src="../assets/photo.jpg" class="avatar"/>
         <h1> João Freitas </h1>
     </div>
@@ -16,8 +16,8 @@
     border-radius: 15%;
 }
 
-h1 {
-    font-size: 24px;
+.header h1 {
+    font-size: 36px;
     color: #ebdbb2
 }
 

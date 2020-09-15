@@ -41,7 +41,6 @@ export default {
   margin-top: 60px;
 }
 
-
 html, body {
     margin: 0;
     height:100%;
