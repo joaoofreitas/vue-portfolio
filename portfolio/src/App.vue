@@ -3,9 +3,11 @@
     <Header/>
     <ConsolePrint/>
     <CardsList/>
-    <BigCard title="About Me" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Programming" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Projects" :content="lorem" bottom="Hello World"/>
+    <BigCard title="About Me" titleColor="#bdae93" :content="lorem" bottom="Hello World"/>
+    <BigCard title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World"/>
+    <BigCard title="Server Management" titleColor="#fabd2f" :content="lorem" bottom="Hello World"/>
+    <BigCard title="Electronics" titleColor="#fb4934" :content="lorem" bottom="Hello World"/>
+    <BigCard title="Projects" titleColor="#689d6a" :content="lorem" bottom="Hello World"/>
   </div>
 </template>
 
@@ -32,7 +34,7 @@ export default {
 </script>
 
 <style>
-@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);
+/*@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);*/
 
 @font-face {
 	font-family: 'Iosevka Web';

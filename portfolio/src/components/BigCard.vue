@@ -1,10 +1,11 @@
 <template>
     <div class="big-card">
         <header class="header">
-            <h1>{{title}}</h1>
+            <h1 :style="titleStyle">{{title}}</h1>
         </header>
+        <div class="divider"/>
         <div class="middle">
-            <a>{{content}}</a>
+            <p>{{content}}</p>
         </div>
         <div class ="bottom-card">
             {{bottom}}
@@ -20,6 +21,9 @@ export default {
         titleColor: String,
         content: String,
         bottom: String
+    },
+    computed: {
+        titleStyle() {return {'--text-color': this.titleColor}}
     }
 }
 </script>
@@ -38,5 +42,15 @@ export default {
         border-radius: 16px;
         background: #282828;
         box-shadow: -1rem 0 3rem #000;
+    }
+
+    .divider {
+        margin-bottom: 25px;
+        width: 80%;
+        align-self: center;
+        border-bottom: 1px solid whitesmoke;
+    }
+    .header h1{
+        color: var(--text-color);
     }
 </style>

@@ -35,8 +35,8 @@ export default {
     position: relative;
     flex-direction: column;
     height: 350px;
-    width: 400px;
-    min-width: 250px;
+    width: 450px;
+    min-width: 200px;
     padding: 1.5rem;
 
     border-radius: 16px;
