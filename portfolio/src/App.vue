@@ -46,7 +46,8 @@ html, body {
     height:100%;
     width:100%;
     padding:0;
-    background-color: #282828;
+    background: linear-gradient(180deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);;
+    /*background-color: #282828;*/
     color: whitesmoke;
 }
 </style>

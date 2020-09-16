@@ -1,9 +1,8 @@
 <template>
     <section class="card-list">
-        
         <Cards  title='Card Skills' 
                 skill="Programming" 
-                skillColor="#458588" 
+                skillColor="#076678" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
         <Cards  title='Card Skills' 
@@ -13,7 +12,7 @@
         
         <Cards  title='Card Skills' 
                 skill="Electronics" 
-                skillColor="#cc241d" 
+                skillColor="#d65d0e" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
         <Cards  title='Card Skills' 
@@ -28,7 +27,7 @@ import Cards from './Card.vue'
 
 export default {
     name: 'CardsList',
-    data() {
+    data() { // to remove, later
         return {
             skills:{
                 DevOps: ['DevOps','Docker', 'AWS EC2'],

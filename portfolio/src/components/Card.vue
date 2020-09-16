@@ -16,6 +16,7 @@
 
 
 export default {
+    name: 'Card',
     props: ['title', 'skill','skillColor', 'content', 'bar-percentage', 'tags'], //need to get this better
     computed: {
         h1Props() {return {'--text-color': this.skillColor}}
@@ -43,9 +44,6 @@ export default {
     box-shadow: -1rem 0 3rem #000;
 
     transition: .2s;
-
-    outline:  1px solid #ebdbb2;
-    outline-offset: -10px ;
 }
 .card:hover {
     transform: translateY(-1rem);
