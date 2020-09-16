@@ -3,6 +3,7 @@
     <Header/>
     <ConsolePrint/>
     <CardsList/>
+    <BigCard/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Header from './components/Header.vue'
 import ConsolePrint from './components/ConsolePrint.vue'
 import CardsList from './components/CardsList.vue'
+import BigCard from './components/BigCard.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     ConsolePrint,
-    CardsList
+    CardsList,
+    BigCard
   }
 }
 </script>
@@ -38,7 +41,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-repeat: no-repeat;
+  background: rgb(29,32,33);
+  background: -moz-linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
+  background: -webkit-linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
+  background: linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2021",endColorstr="#3c3836",GradientType=1);
 }
 
 html, body {
@@ -46,8 +57,7 @@ html, body {
     height:100%;
     width:100%;
     padding:0;
-    background: linear-gradient(180deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);;
-    /*background-color: #282828;*/
+    
     color: whitesmoke;
 }
 </style>
