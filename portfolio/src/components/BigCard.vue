@@ -1,20 +1,26 @@
 <template>
     <div class="big-card">
         <header class="header">
-            <h1>About Me</h1>
+            <h1>{{title}}</h1>
         </header>
         <div class="middle">
-
+            <a>{{content}}</a>
         </div>
-        <div class ="bottom">
-
+        <div class ="bottom-card">
+            {{bottom}}
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'BigCard'
+    name: 'BigCard',
+    props: {
+        title: String,
+        titleColor: String,
+        content: String,
+        bottom: String
+    }
 }
 </script>
 
