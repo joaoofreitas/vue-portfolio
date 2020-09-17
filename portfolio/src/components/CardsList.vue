@@ -1,21 +1,25 @@
 <template>
     <section class="card-list">
-        <Cards  title='Card Skills' 
+        <Cards  v-scroll-to="{el: '#programming', offset: -200}"
+                title='Card Skills' 
                 skill="Programming" 
                 skillColor="#076678" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
-        <Cards  title='Card Skills' 
+        <Cards  v-scroll-to="{el: '#servers', offset: -200}"
+                title='Card Skills' 
                 skill="Server Management"  
                 skillColor="#d79921"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
-        <Cards  title='Card Skills' 
+        <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
+                title='Card Skills' 
                 skill="Electronics" 
                 skillColor="#d65d0e" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
-        <Cards  title='Card Skills' 
+        <Cards  v-scroll-to="{el: '#projects', offset: -200}"
+                title='Card Skills' 
                 skill="Projects"  
                 skillColor="#689d6a"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
@@ -23,7 +27,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import Cards from './Card.vue'
+import VueScrollTo from 'vue-scrollto'
+
+Vue.use(VueScrollTo)
 
 export default {
     name: 'CardsList',

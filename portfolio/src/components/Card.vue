@@ -2,7 +2,7 @@
         <div class="card">
             <header>
                 <a>{{title}}</a>
-                <h1 :style="h1Props" >{{skill}}</h1 >
+                <h1 :style="titleColor" >{{skill}}</h1 >
                 {{content}}
             </header>
             <div class='bottom-card'>
@@ -23,7 +23,7 @@ export default {
             'tags' : String
     },
     computed: {
-        h1Props() {return {'--text-color': this.skillColor}}
+        titleColor() {return {'--text-color': this.skillColor}}
     }
 }
 </script>

@@ -3,11 +3,11 @@
     <Header/>
     <ConsolePrint/>
     <CardsList/>
-    <BigCard title="About Me" titleColor="#bdae93" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Server Management" titleColor="#fabd2f" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Electronics" titleColor="#fb4934" :content="lorem" bottom="Hello World"/>
-    <BigCard title="Projects" titleColor="#689d6a" :content="lorem" bottom="Hello World"/>
+    <BigCard id="about" title="About Me" titleColor="#bdae93" :content="lorem" bottom="Hello World"/>
+    <BigCard id="programming" title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World"/>
+    <BigCard id="servers" title="Server Management" titleColor="#fabd2f" :content="lorem" bottom="Hello World"/>
+    <BigCard id="electronics" title="Electronics" titleColor="#fb4934" :content="lorem" bottom="Hello World"/>
+    <BigCard id="projects" title="Projects" titleColor="#689d6a" :content="lorem" bottom="Hello World"/>
   </div>
 </template>
 
