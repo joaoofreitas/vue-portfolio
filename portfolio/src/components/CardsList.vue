@@ -27,19 +27,13 @@ import Cards from './Card.vue'
 
 export default {
     name: 'CardsList',
-    data() { // to remove, later
-        return {
-            skills:{
-                DevOps: ['DevOps','Docker', 'AWS EC2'],
-                Programming: ['Programming','Python', 'C/C++', 'Javascript', 'Go'], 
-                Frameworks: ['Frameworks','NodeJS', 'Vue' , 'React'],
-                OS : ['OS','GNU/Linux']
-            }
-        }
+    data() {
+        return {}
     },
     components: {
         Cards
-    }
+    },
+    methods: {}
 }
 </script>
 

@@ -13,11 +13,15 @@
 
 
 <script>
-
-
 export default {
     name: 'Card',
-    props: ['title', 'skill','skillColor', 'content', 'bar-percentage', 'tags'], //need to get this better
+    props: {'title' : String, 
+            'skill' : String,
+            'skillColor' : String,
+            'content' : String,
+            'bar-percentage' : String,
+            'tags' : String
+    },
     computed: {
         h1Props() {return {'--text-color': this.skillColor}}
     }
@@ -25,7 +29,6 @@ export default {
 </script>
 
 <style>
-
 .card:hover h1{
     color: var(--text-color);
     transition: .3s;
