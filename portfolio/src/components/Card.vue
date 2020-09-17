@@ -50,6 +50,7 @@ export default {
 }
 .card:hover {
     transform: translateY(-1rem);
+    cursor: pointer;
 }
 
 .card:hover~.card{
