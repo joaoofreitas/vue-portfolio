@@ -6,6 +6,7 @@
         <div class="divider"/>
         <div class="middle">
             <p>{{content}}</p>
+            <slot></slot>
         </div>
         <div class ="bottom-card">
             {{bottom}}
@@ -33,7 +34,7 @@ export default {
         display: flex; 
         position: relative;
         flex-direction: column;
-        height: 700px;
+        min-height: 500px;
         min-width: 250px;
         
         padding: 1.5rem;
@@ -42,6 +43,8 @@ export default {
         border-radius: 16px;
         background: #282828;
         box-shadow: -1rem 0 3rem #000;
+        
+        overflow: hidden;
     }
 
     .divider {
@@ -52,5 +55,9 @@ export default {
     }
     .header h1{
         color: var(--text-color);
+    }
+
+    .middle {
+        margin: 0px 20% 80px 20%;
     }
 </style>
