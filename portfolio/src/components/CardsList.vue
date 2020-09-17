@@ -65,6 +65,6 @@ export default {
 }
 
 .card-list::-webkit-scrollbar-track{
-    background: linear-gradient(180deg,#1d2021,#1d2021 1px,#1d2021 0,#3c3836);
+    background: linear-gradient(180deg,#1d202144,#1d202144 1px,#1d202144 0,#3c3836AA);
 }
 </style>
