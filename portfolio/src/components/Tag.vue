@@ -1,13 +1,16 @@
 <template>
     <div class='tag'>
-        <span>Hello World!</span>
+        <span>{{nameTag}}</span>
     </div>
     
 </template>
 
 <script>
 export default {
-    name: 'Tags'
+    name: 'Tags',
+    props: {
+        nameTag: String
+    }
 }
 </script>
 

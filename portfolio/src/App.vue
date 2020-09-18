@@ -4,11 +4,35 @@
     <ConsolePrint/>
     <CardsList/>
     <AboutMe id="about" titleColor="#bdae93" :aboutContent="lorem"/>
-    <BigCard id="programming" title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World"/>
-    <BigCard id="servers" title="Server Management" titleColor="#fabd2f" :content="lorem" bottom="Hello World"/>
-    <BigCard id="electronics" title="Electronics" titleColor="#fb4934" :content="lorem" bottom="Hello World"/>
-    <BigCard id="projects" title="Projects" titleColor="#689d6a" :content="lorem" bottom="Hello World"/>
-    <Tag/>
+    
+    <BigCard id="programming" title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World">
+      {{lorem}}
+      <template v-slot:footer>
+        <Tag nameTag="Hello World"/>
+      </template>
+    </BigCard>
+    
+    <BigCard id="servers" title="Server Management" titleColor="#fabd2f">
+      {{lorem}}
+      <template v-slot:footer>
+        <Tag nameTag="Hello World"/>
+      </template>
+    </BigCard>
+    
+    <BigCard id="electronics" title="Electronics" titleColor="#fb4934">
+      {{lorem}}
+      <template v-slot:footer>
+        <Tag nameTag="Hello World"/>
+      </template>
+    </BigCard>
+    
+    <BigCard id="projects" title="Projects" titleColor="#689d6a">
+      {{lorem}}
+      <template v-slot:footer>
+        <Tag nameTag="Hello World"/>
+      </template>
+    </BigCard>
+  
   </div>
 </template>
 

@@ -5,11 +5,10 @@
         </header>
         <div class="divider"/>
         <div class="middle">
-            <p>{{content}}</p>
-            <slot></slot>
+            <slot/>
         </div>
         <div class ="bottom-card">
-            {{bottom}}
+            <slot name="footer"/>
         </div>
     </div>
 </template>
@@ -19,9 +18,7 @@ export default {
     name: 'BigCard',
     props: {
         title: String,
-        titleColor: String,
-        content: String,
-        bottom: String
+        titleColor: String
     },
     computed: {
         titleStyle() {return {'--text-color': this.titleColor}}
