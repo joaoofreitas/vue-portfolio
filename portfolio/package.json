@@ -13,7 +13,6 @@
     "vue": "^2.6.11",
     "vue-next-level-scroll": "^1.2.0",
     "vue-scrollto": "^2.18.2",
-    "vue-type-writer": "^0.2.1",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {

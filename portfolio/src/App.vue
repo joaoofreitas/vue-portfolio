@@ -8,6 +8,7 @@
     <BigCard id="servers" title="Server Management" titleColor="#fabd2f" :content="lorem" bottom="Hello World"/>
     <BigCard id="electronics" title="Electronics" titleColor="#fb4934" :content="lorem" bottom="Hello World"/>
     <BigCard id="projects" title="Projects" titleColor="#689d6a" :content="lorem" bottom="Hello World"/>
+    <Tag/>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import ConsolePrint from './components/ConsolePrint.vue'
 import CardsList from './components/CardsList.vue'
 import AboutMe from './components/AboutMe.vue'
 import BigCard from './components/BigCard.vue'
+import Tag from './components/Tag.vue'
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     ConsolePrint,
     CardsList,
     AboutMe,
-    BigCard
+    BigCard,
+    Tag
   }
 }
 </script>
