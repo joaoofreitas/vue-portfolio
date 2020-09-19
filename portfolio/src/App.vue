@@ -44,7 +44,7 @@ import AboutMe from './components/AboutMe.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
 
-import requests from '../backend/requests.ts' //Importing backend stuff
+import requests from '../backend/requests.js' //Importing backend stuff
 console.log(requests); // This is a temporary test
 
 export default {
