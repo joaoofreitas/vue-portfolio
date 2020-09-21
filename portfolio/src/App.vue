@@ -44,8 +44,8 @@ import AboutMe from './components/AboutMe.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
 
-import requests from '../backend/requests.js' //Importing backend stuff
-console.log(requests); // This is a temporary test
+//import requests from '../backend/requests.js' //Importing backend stuff
+//console.log(requests); // This is a temporary test
 
 export default {
   name: 'App',
@@ -67,9 +67,9 @@ export default {
 
 <style>
 @font-face {
-	font-family: 'Iosevka Web';
+	font-family: 'Iosevka';
 	font-display: swap;
-	font-weight: 400;
+	font-weight: 100;
 	font-stretch: normal;
 	font-style: normal;
   src: url('/fonts/iosevka-regular.woff2') format('woff2'), url('/fonts/iosevka-regular-truetype.ttf') format('truetype');
@@ -77,8 +77,17 @@ export default {
 
 }
 
+@font-face {
+  font-family: 'Iosevka Bold';
+  font-display: swap;
+	font-stretch: normal;
+	font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/iosevka-bold.woff2') format('woff2');
+}
+
 #app {
-  font-family: Iosevka Web;
+  font-family: 'Iosevka';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -100,5 +109,9 @@ html, body {
     padding:0;
     
     color: whitesmoke;
+}
+
+body h1, h2, h3, b {
+  font-family: 'Iosevka Bold';
 }
 </style>
