@@ -14,13 +14,13 @@ export default {
 <style>
 .avatar{
     vertical-align: left;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 20px;
 }
 
 .header h1 {
     font-size: 36px;
-    color: #ebdbb2
+    color: #d1d1d1
 }
-</style>1
+</style>

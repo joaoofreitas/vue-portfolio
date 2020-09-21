@@ -3,25 +3,25 @@
         <Cards  v-scroll-to="{el: '#programming', offset: -200}"
                 title='Card Skills' 
                 skill="Programming" 
-                skillColor="#076678" 
+                skillColor="whitesmoke" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
         <Cards  v-scroll-to="{el: '#servers', offset: -200}"
                 title='Card Skills' 
                 skill="Server Management"  
-                skillColor="#d79921"
+                skillColor="#whitesmoke"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
         <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
                 title='Card Skills' 
                 skill="Electronics" 
-                skillColor="#d65d0e" 
+                skillColor="#whitesmoke" 
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
         
         <Cards  v-scroll-to="{el: '#projects', offset: -200}"
                 title='Card Skills' 
                 skill="Projects"  
-                skillColor="#689d6a"
+                skillColor="#whitesmoke"
                 content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
     </section>
 </template>

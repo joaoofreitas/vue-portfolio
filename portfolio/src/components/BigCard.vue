@@ -38,7 +38,7 @@ export default {
         margin: 1.5rem 1.5rem 0 1.5rem;
 
         border-radius: 16px;
-        background: #282828;
+        background: #242424;
         box-shadow: -1rem 0 3rem #000;
         
         overflow: hidden;

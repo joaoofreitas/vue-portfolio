@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header class="animate__animated animate__fadeIn"/>
     <ConsolePrint/>
-    <CardsList/>
+    <CardsList class="animate__animated animate__slideInUp"/>
     <AboutMe id="about" titleColor="#bdae93" :aboutContent="lorem"/>
     
-    <BigCard id="programming" title="Programming" titleColor="#076678" :content="lorem" bottom="Hello World">
+    <BigCard id="programming" title="Programming" titleColor="#bdae93" :content="lorem" bottom="Hello World">
       {{lorem}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
       </template>
     </BigCard>
     
-    <BigCard id="servers" title="Server Management" titleColor="#fabd2f">
+    <BigCard id="servers" title="Server Management" titleColor="#bdae93">
       {{lorem}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
       </template>
     </BigCard>
     
-    <BigCard id="electronics" title="Electronics" titleColor="#fb4934">
+    <BigCard id="electronics" title="Electronics" titleColor="#bdae93">
       {{lorem}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
       </template>
     </BigCard>
     
-    <BigCard id="projects" title="Projects" titleColor="#689d6a">
+    <BigCard id="projects" title="Projects" titleColor="#bdae93">
       {{lorem}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
@@ -43,7 +43,7 @@ import CardsList from './components/CardsList.vue'
 import AboutMe from './components/AboutMe.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
-
+import 'animate.css';
 //import requests from '../backend/requests.js' //Importing backend stuff
 //console.log(requests); // This is a temporary test
 
@@ -95,12 +95,13 @@ export default {
   padding-bottom: 60px;
 
   background-repeat: no-repeat;
-  background: rgb(29,32,33);
-  background: -moz-linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
-  background: -webkit-linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
-  background: linear-gradient(360deg, rgba(29,32,33,1) 0%, rgba(43,43,42,1) 50%, rgba(60,56,54,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2021",endColorstr="#3c3836",GradientType=1);
-}
+  background: rgb(36,36,36);
+  background: -moz-linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(75,65,63,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(75,65,63,1) 100%);
+  background: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(75,65,63,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242424",endColorstr="#4b413f",GradientType=1);
+  
+  }
 
 html, body {
     margin: 0;
@@ -113,5 +114,14 @@ html, body {
 
 body h1, h2, h3, b {
   font-family: 'Iosevka Bold';
+  color: #a7a4a3;
 }
 </style>
+
+/* New ColorScheme
+  white #d1d1d1
+  black #242424
+  gray: #827d7a
+  lightBrown: #60534b
+  darkBrown: #4b413f
+*/

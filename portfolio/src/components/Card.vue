@@ -43,7 +43,7 @@ export default {
     padding: 1.5rem;
 
     border-radius: 16px;
-    background: #282828;
+    background: #242424;
     box-shadow: -1rem 0 3rem #000;
 
     transition: .2s;

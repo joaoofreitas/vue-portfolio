@@ -17,7 +17,7 @@ export default {
 <style>
 .vue-typer .custom.char.typed {
   font-size: 20px;
-  color: #fbf1cf
+  color: #d1d1d1
 }
 
 .vue-typer .custom.caret {
