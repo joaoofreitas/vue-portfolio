@@ -27,7 +27,8 @@
     </BigCard>
     
     <BigCard id="projects" title="Projects" titleColor="#bdae93">
-      {{lorem}}
+      <!--- {{lorem}} --->
+      <Projects/>
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
       </template>
@@ -43,7 +44,13 @@ import CardsList from './components/CardsList.vue'
 import AboutMe from './components/AboutMe.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
+import Projects from './components/Projects.vue'
+
 import 'animate.css';
+
+
+
+
 //import requests from '../backend/requests.js' //Importing backend stuff
 //console.log(requests); // This is a temporary test
 
@@ -60,7 +67,8 @@ export default {
     CardsList,
     AboutMe,
     BigCard,
-    Tag
+    Tag,
+    Projects
   }
 }
 </script>
