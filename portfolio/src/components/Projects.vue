@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div v-for="repos in repositories" :key="repos">
-      <!---fUCK THIS-->
+    <div v-for="len in repositories.name.length" :key="len">
+      <h3 :href="repositories.html_url[len]">{{repositories.name[len]}}</h3>
+      <p>{{repositories.description[len]}}</p>
     </div>
   </div>
 </template>
