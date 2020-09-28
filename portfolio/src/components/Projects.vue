@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="len in repositories.name.length " :key="len">
+  <div class="container">
+    <div class="content" v-for="len in repositories.name.length " :key="len">
       <h2> 
         <a :href="`${repositories.html_url[len - 1]}`">
         {{repositories.name[len - 1]}}
@@ -8,8 +8,6 @@
       </h2>
       <p>{{repositories.description[len - 1]}}</p>
       <Tag :nameTag="`${repositories.language[len -1]}`"/>
-      <br/>
-      <div class="content-divider"/>
     </div>
   </div>
 </template>
@@ -58,6 +56,21 @@ export default {
 </script>
 
 <style scoped>
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content {
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    border-bottom: 1px solid whitesmoke;
+  }
+
   h2 a {
     color: #a7a4a3;
     text-decoration: none;
