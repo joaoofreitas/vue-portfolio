@@ -27,10 +27,9 @@
     </BigCard>
     
     <BigCard id="projects" title="Projects" titleColor="#bdae93">
-      <!--- {{lorem}} -->
       <Projects/>
       <template v-slot:footer>
-        <Tag nameTag="Hello World"/>
+        <Tag nameTag="Comming Soon!"/>
       </template>
     </BigCard>
   

@@ -1,13 +1,22 @@
 <template>
   <div>
-    <div v-for="len in repositories.name.length" :key="len">
-      <h3 :href="repositories.html_url[len]">{{repositories.name[len]}}</h3>
-      <p>{{repositories.description[len]}}</p>
+    <div v-for="len in repositories.name.length " :key="len">
+      <h2> 
+        <a :href="`${repositories.html_url[len - 1]}`">
+        {{repositories.name[len - 1]}}
+        </a>
+      </h2>
+      <p>{{repositories.description[len - 1]}}</p>
+      <Tag :nameTag="`${repositories.language[len -1]}`"/>
+      <br/>
+      <div class="content-divider"/>
     </div>
   </div>
 </template>
 
 <script>
+import Tag from './Tag'
+
 const axios = require('axios').default;
 require('dotenv').config()
 
@@ -18,25 +27,30 @@ export default {
             repositories: null
     }
   },
+  components: {
+    Tag
+  },
   mounted () {
     axios.get('https://api.github.com/users/joaoofreitas/repos', { 'headers': { 'Authorization': process.env.TOKEN } })
     .then((response) => {
       let repos = {
         name: [],
         description: [],
-        html_url: []
+        html_url: [],
+        language: []
       }
       for (let i = 0; i < response.data.length; i++) {
         if (response.data[i].description != null) {
           repos.name.push(response.data[i].name)
           repos.html_url.push(response.data[i].html_url)
           repos.description.push(response.data[i].description)
+          repos.language.push(response.data[i].language)
         } 
         else {
           console.log(`The repositories ignored are: ${response.data[i].name}`)
         }
       }
-      console.log(repos)
+      console.log(response.data)
       this.repositories = repos
     })
   }
@@ -44,5 +58,15 @@ export default {
 </script>
 
 <style scoped>
+  h2 a {
+    color: #a7a4a3;
+    text-decoration: none;
+  }
 
+  .content-divider {
+        margin-bottom: 25px;
+        width: 100%;
+        align-self: center;
+        border-bottom: 1px solid whitesmoke;
+  }
 </style>
