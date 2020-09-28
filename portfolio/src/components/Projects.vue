@@ -72,14 +72,7 @@ export default {
   }
 
   h2 a {
-    color: #a7a4a3;
+    color: #bdae9a;
     text-decoration: none;
-  }
-
-  .content-divider {
-        margin-bottom: 25px;
-        width: 100%;
-        align-self: center;
-        border-bottom: 1px solid whitesmoke;
   }
 </style>
