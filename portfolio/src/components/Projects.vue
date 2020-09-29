@@ -22,7 +22,12 @@ export default {
     name: 'Projects',
     data () {
         return {
-            repositories: null
+            repositories: {
+              name: [],
+              description: [],
+              html_url: [],
+              language: []
+            }
     }
   },
   components: {
@@ -48,7 +53,6 @@ export default {
           console.log(`The repositories ignored are: ${response.data[i].name}`)
         }
       }
-      console.log(response.data)
       this.repositories = repos
     })
   }

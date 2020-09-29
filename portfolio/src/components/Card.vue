@@ -1,10 +1,10 @@
 <template>
         <div class="card">
-            <header>
+            <div>
                 <a>{{title}}</a>
                 <h1 :style="titleColor" >{{skill}}</h1 >
-                {{content}}
-            </header>
+            </div>
+            <a><slot/></a>
             <div class='bottom-card'>
                 Card Bottom
             </div>
@@ -17,10 +17,7 @@ export default {
     name: 'Card',
     props: {'title' : String, 
             'skill' : String,
-            'skillColor' : String,
-            'content' : String,
-            'bar-percentage' : String,
-            'tags' : String
+            'skillColor' : String
     },
     computed: {
         titleColor() {return {'--text-color': this.skillColor}}

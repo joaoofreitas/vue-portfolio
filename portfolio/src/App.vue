@@ -2,11 +2,24 @@
   <div id="app">
     <Header class="animate__animated animate__fadeIn"/>
     <ConsolePrint/>
-    <CardsList class="animate__animated animate__slideInUp"/>
+    <CardsList class="animate__animated animate__slideInUp">
+      <template v-slot:programming>
+        this is crazy
+      </template>
+      <template v-slot:server>
+        servers are cool
+      </template>
+      <template v-slot:electronics>
+        electronics sucks
+      </template>
+      <template v-slot:projects>
+        i do some open-source projects
+      </template>
+    </CardsList>
     <AboutMe id="about" titleColor="#bdae93" :aboutContent="lorem"/>
     
     <BigCard id="programming" title="Programming" titleColor="#bdae93" :content="lorem" bottom="Hello World">
-      {{lorem}}
+      {{contents.smallCard.programming}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
       </template>

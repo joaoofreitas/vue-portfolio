@@ -3,26 +3,27 @@
         <Cards  v-scroll-to="{el: '#programming', offset: -200}"
                 title='Card Skills' 
                 skill="Programming" 
-                skillColor="whitesmoke" 
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
-        
+                skillColor="whitesmoke">
+                <slot name="programming"/>
+        </Cards>
         <Cards  v-scroll-to="{el: '#servers', offset: -200}"
                 title='Card Skills' 
                 skill="Server Management"  
-                skillColor="#whitesmoke"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
-        
+                skillColor="#whitesmoke">
+                <slot name="server"/>
+        </Cards>
         <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
                 title='Card Skills' 
                 skill="Electronics" 
-                skillColor="#whitesmoke" 
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
-        
+                skillColor="#whitesmoke">
+                <slot name="electronics"/>
+        </Cards>
         <Cards  v-scroll-to="{el: '#projects', offset: -200}"
                 title='Card Skills' 
                 skill="Projects"  
-                skillColor="#whitesmoke"
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+                skillColor="#whitesmoke">
+                <slot name="projects"/>
+         </Cards>
     </section>
 </template>
 
