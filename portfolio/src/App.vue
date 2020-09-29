@@ -3,22 +3,27 @@
     <Header class="animate__animated animate__fadeIn"/>
     <ConsolePrint/>
     <CardsList class="animate__animated animate__slideInUp">
+
       <template v-slot:programming>
         this is crazy
       </template>
+
       <template v-slot:server>
         servers are cool
       </template>
+
       <template v-slot:electronics>
         electronics sucks
       </template>
+
       <template v-slot:projects>
         i do some open-source projects
       </template>
+
     </CardsList>
-    <AboutMe id="about" titleColor="#bdae93" :aboutContent="lorem"/>
+    <AboutMe id="about" titleColor="#bdae93" :aboutContent="contents.aboutMe"/>
     
-    <BigCard id="programming" title="Programming" titleColor="#bdae93" :content="lorem" bottom="Hello World">
+    <BigCard id="programming" title="Programming" titleColor="#bdae93">
       {{contents.smallCard.programming}}
       <template v-slot:footer>
         <Tag nameTag="Hello World"/>
@@ -60,17 +65,14 @@ import Projects from './components/Projects.vue'
 
 import 'animate.css';
 
-
-
-
-//import requests from '../backend/requests.js' //Importing backend stuff
-//console.log(requests); // This is a temporary test
-
 export default {
   name: 'App',
     data() {
       return {
         contents: {
+           aboutMe: `I'm a Portuguese Computer Science student with two degrees in electronics. People that I work with say I'm talented. I call it hard work and sweat. Started programming in 2016 with C++ applied to ATMega microcontrollers. Since there, I've been learning more languages and frameworks to develop my skills in this field.
+                    I've worked as a Software/Hardware developer in two companies, being one of them a research institute in Portugal.
+                    I always find to help people developing their projects and even try to contribute and use open-source has much has possible.`,
           smallCard: {
             programming: "Programming stuff is good and stuff like that"
           },
