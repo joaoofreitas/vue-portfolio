@@ -55,6 +55,6 @@ export default {
     }
 
     .middle {
-        margin: 0px 20% 80px 20%;
+        margin: 0px 10% 80px 10%;
     }
 </style>

@@ -58,7 +58,7 @@ export default {
 <style scoped>
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, 550px);
     justify-content: center;
     width: 100%;
   }
