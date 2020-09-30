@@ -4,25 +4,44 @@
                 title='Card Skills' 
                 skill="Programming" 
                 skillColor="whitesmoke">
+                
                 <slot name="programming"/>
+                <template v-slot:tags>
+                    <slot name="programming-tags"/>
+                </template>
         </Cards>
         <Cards  v-scroll-to="{el: '#servers', offset: -200}"
                 title='Card Skills' 
                 skill="Server Management"  
                 skillColor="#whitesmoke">
+
                 <slot name="server"/>
+                <template v-slot:tags>
+                    <slot name="server-tags"/>
+                </template>
+                
         </Cards>
         <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
                 title='Card Skills' 
                 skill="Electronics" 
                 skillColor="#whitesmoke">
+
                 <slot name="electronics"/>
+
+                <template v-slot:tags>
+                    <slot name="electronics-tags"/>
+                </template>
         </Cards>
         <Cards  v-scroll-to="{el: '#projects', offset: -200}"
                 title='Card Skills' 
                 skill="Projects"  
                 skillColor="#whitesmoke">
+
                 <slot name="projects"/>
+
+                <template v-slot:tags>
+                    <slot name="projects-tags"/>
+                </template>
          </Cards>
     </section>
 </template>

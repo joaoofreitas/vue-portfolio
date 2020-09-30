@@ -6,7 +6,7 @@
             </div>
             <a><slot/></a>
             <div class='bottom-card'>
-                Card Bottom
+                <slot name="tags"/>
             </div>
         </div>
 </template>
@@ -59,8 +59,10 @@ export default {
 }
 
 .bottom-card {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 25px;
-    left: 25px;
+
 }
 </style>

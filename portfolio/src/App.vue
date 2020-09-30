@@ -5,23 +5,43 @@
     <CardsList class="animate__animated animate__slideInUp">
 
       <template v-slot:programming>
-        this is crazy
+        Here I talk about my programming skills, languages and frameworks often used.
+      </template>
+      <template v-slot:programming-tags>
+        <Tag nameTag="C"/>
+        <Tag nameTag="C++"/>
+        <Tag nameTag="Python"/>
+        <Tag nameTag="JavaScript"/>
       </template>
 
       <template v-slot:server>
-        servers are cool
+        Here I talk about my knowledge about servers and networking.
+      </template>
+      <template v-slot:server-tags>
+        <Tag nameTag="GNU/Linux"/>
+        <Tag nameTag="Docker"/>
+        <Tag nameTag="CCNA"/>
       </template>
 
       <template v-slot:electronics>
-        electronics sucks
+        Here I talk about my path in electronics and how did it influence me starting to write code.
+      </template>
+      <template v-slot:electronics-tags>
+        <Tag nameTag="Microcontrollers"/>
+        <Tag nameTag="IoT"/>
+        <Tag nameTag="Digital Electronics"/>
       </template>
 
       <template v-slot:projects>
-        i do some open-source projects
+        My public Github repositories and open-source projects.
+      </template>
+      <template v-slot:projects-tags>
+        <Tag nameTag="Open-Source"/>
+        <Tag nameTag="Github"/>
       </template>
 
     </CardsList>
-    
+
     <AboutMeStruct id="about" titleColor="#bdae93">
       <AboutMe/>
     </AboutMeStruct>
@@ -29,14 +49,14 @@
     <BigCard id="programming" title="Programming" titleColor="#bdae93">
       <Programming/>
       <template v-slot:footer>
-        <Tag nameTag="State: On Development..."/>
+        <Tag nameTag="Compiled Sucessfully!"/>
       </template>
     </BigCard>
     
     <BigCard id="servers" title="Server Management" titleColor="#bdae93">
       <Server/>
       <template v-slot:footer>
-        <Tag nameTag="Pinging..."/>
+        <Tag nameTag="Running..."/>
       </template>
     </BigCard>
     
