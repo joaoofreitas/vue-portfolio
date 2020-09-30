@@ -21,26 +21,29 @@
       </template>
 
     </CardsList>
-    <AboutMe id="about" titleColor="#bdae93" :aboutContent="contents.aboutMe"/>
+    
+    <AboutMeStruct id="about" titleColor="#bdae93">
+      <AboutMe/>
+    </AboutMeStruct>
     
     <BigCard id="programming" title="Programming" titleColor="#bdae93">
-      {{contents.smallCard.programming}}
+      <Programming/>
       <template v-slot:footer>
-        <Tag nameTag="Hello World"/>
+        <Tag nameTag="State: On Development..."/>
       </template>
     </BigCard>
     
     <BigCard id="servers" title="Server Management" titleColor="#bdae93">
-      {{lorem}}
+      <Server/>
       <template v-slot:footer>
-        <Tag nameTag="Hello World"/>
+        <Tag nameTag="Pinging..."/>
       </template>
     </BigCard>
     
     <BigCard id="electronics" title="Electronics" titleColor="#bdae93">
-      {{lorem}}
+      <Electronics/>
       <template v-slot:footer>
-        <Tag nameTag="Hello World"/>
+        <Tag nameTag="Are you a 1 or a 0?"/>
       </template>
     </BigCard>
     
@@ -58,39 +61,36 @@
 import Header from './components/Header.vue'
 import ConsolePrint from './components/ConsolePrint.vue'
 import CardsList from './components/CardsList.vue'
-import AboutMe from './components/AboutMe.vue'
+import AboutMeStruct from './components/AboutMeStructure.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
 import Projects from './components/Projects.vue'
+
+import AboutMe from './components/content/AboutMe.vue'
+import Programming from './components/content/Programming.vue'
+import Server from './components/content/Server.vue'
+import Electronics from './components/content/Electronics.vue'
 
 import 'animate.css';
 
 export default {
   name: 'App',
     data() {
-      return {
-        contents: {
-           aboutMe: `I'm a Portuguese Computer Science student with two degrees in electronics. People that I work with say I'm talented. I call it hard work and sweat. Started programming in 2016 with C++ applied to ATMega microcontrollers. Since there, I've been learning more languages and frameworks to develop my skills in this field.
-                    I've worked as a Software/Hardware developer in two companies, being one of them a research institute in Portugal.
-                    I always find to help people developing their projects and even try to contribute and use open-source has much has possible.`,
-          smallCard: {
-            programming: "Programming stuff is good and stuff like that"
-          },
-          bigCard: {
-
-          }
-        },
-        lorem : "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat"
-    }
+      return {}
   },
   components: {
     Header,
     ConsolePrint,
     CardsList,
-    AboutMe,
+    AboutMeStruct,
     BigCard,
     Tag,
-    Projects
+    Projects,
+
+    AboutMe,
+    Programming,
+    Server,
+    Electronics
   }
 }
 </script>
@@ -147,11 +147,3 @@ body h1, h2, h3, b {
   color: #a7a4a3;
 }
 </style>
-
-/* New ColorScheme
-  white #d1d1d1
-  black #242424
-  gray: #827d7a
-  lightBrown: #60534b
-  darkBrown: #4b413f
-*/

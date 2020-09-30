@@ -4,17 +4,16 @@
             <h1 :style="titleStyle">About Me</h1>
         </header>
         <div class="about-content">
-            <p>{{aboutContent}}</p>
+            <slot/>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'AboutMe',
+    name: 'AboutMeStruct',
     props: {
         titleColor: String,
-        aboutContent: String
     },
     computed: {
         titleStyle() {return {'--text-color': this.titleColor}}
@@ -31,6 +30,6 @@ export default {
     }
 
     .about-content{
-        margin: 0px 20% 100px 20%;
+        margin: 0px 10% 100px 10%;
     }
 </style>
