@@ -2,7 +2,7 @@
         <div class="card">
             <div>
                 <a>{{title}}</a>
-                <h1 :style="titleColor" >{{skill}}</h1 >
+                <h1 :style="titleColor">{{skill}}</h1>
             </div>
             <a><slot/></a>
             <div class='bottom-card'>
@@ -60,7 +60,7 @@ export default {
 
 .bottom-card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     position: absolute;
     bottom: 25px;
 

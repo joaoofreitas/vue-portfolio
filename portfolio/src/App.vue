@@ -27,9 +27,10 @@
         Here I talk about my path in electronics and how did it influence me starting to write code.
       </template>
       <template v-slot:electronics-tags>
-        <Tag nameTag="Microcontrollers"/>
-        <Tag nameTag="IoT"/>
         <Tag nameTag="Digital Electronics"/>
+        <Tag nameTag="IoT"/>
+        <Tag nameTag="Microcontrollers"/>
+        
       </template>
 
       <template v-slot:projects>
