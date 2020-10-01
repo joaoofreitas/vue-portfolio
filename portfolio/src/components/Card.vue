@@ -1,7 +1,6 @@
 <template>
         <div class="card">
             <div>
-                <a>{{title}}</a>
                 <h1 :style="titleColor">{{skill}}</h1>
             </div>
             <a><slot/></a>
@@ -15,8 +14,7 @@
 <script>
 export default {
     name: 'Card',
-    props: {'title' : String, 
-            'skill' : String,
+    props: {'skill' : String,
             'skillColor' : String
     },
     computed: {

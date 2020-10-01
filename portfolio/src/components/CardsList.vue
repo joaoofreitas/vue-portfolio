@@ -1,7 +1,6 @@
 <template>
     <section class="card-list">
         <Cards  v-scroll-to="{el: '#programming', offset: -200}"
-                title='_________' 
                 skill="Programming" 
                 skillColor="whitesmoke">
                 
@@ -11,7 +10,6 @@
                 </template>
         </Cards>
         <Cards  v-scroll-to="{el: '#servers', offset: -200}"
-                title='_________' 
                 skill="Server Management"  
                 skillColor="#whitesmoke">
 
@@ -22,7 +20,6 @@
                 
         </Cards>
         <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
-                title='_________' 
                 skill="Electronics" 
                 skillColor="#whitesmoke">
 
@@ -33,7 +30,6 @@
                 </template>
         </Cards>
         <Cards  v-scroll-to="{el: '#projects', offset: -200}"
-                title='_________' 
                 skill="Projects"  
                 skillColor="#whitesmoke">
 
