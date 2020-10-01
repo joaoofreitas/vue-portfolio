@@ -2,7 +2,7 @@
     <section class="card-list">
         <Cards  v-scroll-to="{el: '#programming', offset: -200}"
                 skill="Programming" 
-                skillColor="whitesmoke">
+                skillColor="#bdae93">
                 
                 <slot name="programming"/>
                 <template v-slot:tags>
@@ -11,7 +11,7 @@
         </Cards>
         <Cards  v-scroll-to="{el: '#servers', offset: -200}"
                 skill="Server Management"  
-                skillColor="#whitesmoke">
+                skillColor="#bdae93">
 
                 <slot name="server"/>
                 <template v-slot:tags>
@@ -21,7 +21,7 @@
         </Cards>
         <Cards  v-scroll-to="{el: '#electronics', offset: -200}"
                 skill="Electronics" 
-                skillColor="#whitesmoke">
+                skillColor="#bdae93">
 
                 <slot name="electronics"/>
 
@@ -31,7 +31,7 @@
         </Cards>
         <Cards  v-scroll-to="{el: '#projects', offset: -200}"
                 skill="Projects"  
-                skillColor="#whitesmoke">
+                skillColor="#bdae93">
 
                 <slot name="projects"/>
 
