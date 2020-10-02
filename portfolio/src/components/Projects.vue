@@ -79,4 +79,14 @@ export default {
     color: #bdae9a;
     text-decoration: none;
   }
+
+  @media (max-width: 768px){
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 375px);
+    justify-content: center;
+    width: 100%;
+  }
+  }
+
 </style>

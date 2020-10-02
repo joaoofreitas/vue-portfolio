@@ -170,4 +170,13 @@ body h1, h2, h3, b {
   font-family: 'Iosevka Bold';
   color: #a7a4a3;
 }
+
+@media (max-width: 768px){
+  body {
+    font-size: 14px;
+  }
+ .animate__slideInUp {
+   display: none;
+ }
+}
 </style>

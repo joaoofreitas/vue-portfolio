@@ -24,4 +24,11 @@ export default {
   text-decoration: overline;
   background-color: #bdae93;
 }
+
+@media (max-width: 768px){
+  .vue-typer .custom.char.typed {
+    font-size: 16px;
+    color: #d1d1d1
+  }
+}
 </style>
