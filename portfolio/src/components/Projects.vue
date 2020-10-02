@@ -83,7 +83,7 @@ export default {
   @media (max-width: 768px){
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 375px);
+    grid-template-columns: repeat(auto-fit, 330px);
     justify-content: center;
     width: 100%;
   }
