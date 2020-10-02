@@ -66,21 +66,6 @@ export default {
     justify-content: center;
     display: flex;
     padding: 3rem;
-    overflow-x: scroll;
-}
-
-.card-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.card-list::-webkit-scrollbar-thumb {
-    background: #282828;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0,0%,75%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
-}
-
-.card-list::-webkit-scrollbar-track{
-    background: linear-gradient(180deg,#1d202144,#1d202144 1px,#1d202144 0,#3c3836AA);
+    overflow-x: hidden;
 }
 </style>
