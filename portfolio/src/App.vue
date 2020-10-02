@@ -145,8 +145,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0vw 60px 0vw;
 
   background-repeat: no-repeat;
   background: rgb(36,36,36);
@@ -155,13 +154,13 @@ export default {
   background: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(75,65,63,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#242424",endColorstr="#4b413f",GradientType=1);
   
-  }
+}
 
 html, body {
     margin: 0;
     height:100%;
-    width:100%;
-    padding:0;
+    width: 100%;
+    padding: 0;
     
     color: whitesmoke;
 }
