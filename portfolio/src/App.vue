@@ -74,7 +74,8 @@
         <Tag nameTag="Comming Soon!"/>
       </template>
     </BigCard>
-  
+
+    <Footer/>
   </div>
 </template>
 
@@ -86,6 +87,7 @@ import AboutMeStruct from './components/AboutMeStructure.vue'
 import BigCard from './components/BigCard.vue'
 import Tag from './components/Tag.vue'
 import Projects from './components/Projects.vue'
+import Footer from './components/Footer.vue'
 
 import AboutMe from './components/content/AboutMe.vue'
 import Programming from './components/content/Programming.vue'
@@ -107,6 +109,7 @@ export default {
     BigCard,
     Tag,
     Projects,
+    Footer,
 
     AboutMe,
     Programming,
