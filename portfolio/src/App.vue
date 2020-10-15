@@ -38,7 +38,7 @@
       </template>
       <template v-slot:projects-tags>
         <Tag nameTag="Open-Source"/>
-        <Tag nameTag="Github"/>
+        <Tag nameTag="GitHub"/>
       </template>
 
     </CardsList>

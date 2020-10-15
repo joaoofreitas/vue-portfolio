@@ -43,7 +43,7 @@ export default {
         language: []
       }
       for (let i = 0; i < response.data.length; i++) {
-        if (response.data[i].description != null) {
+        if (response.data[i].description != null && response.data[i].language != null) {
           repos.name.push(response.data[i].name)
           repos.html_url.push(response.data[i].html_url)
           repos.description.push(response.data[i].description)
