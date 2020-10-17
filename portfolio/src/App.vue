@@ -162,8 +162,7 @@ html, body {
     width: 100%;
     padding: 0;
     
-    /*background: rgb(36,36,36);*/
-    background: pink;
+    background: rgb(36,36,36);
     color: whitesmoke;
 }
 
