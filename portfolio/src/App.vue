@@ -34,7 +34,7 @@
       </template>
 
       <template v-slot:projects>
-        My public Github repositories and open-source projects.
+        My public GitHub repositories and open-source projects.
       </template>
       <template v-slot:projects-tags>
         <Tag nameTag="Open-Source"/>
