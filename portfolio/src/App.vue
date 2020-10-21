@@ -10,6 +10,7 @@
       <template v-slot:programming-tags>
         <Tag nameTag="C"/>
         <Tag nameTag="C++"/>
+        <Tag nameTag="C#"/>
         <Tag nameTag="Python"/>
         <Tag nameTag="JavaScript"/>
       </template>
@@ -19,6 +20,8 @@
       </template>
       <template v-slot:server-tags>
         <Tag nameTag="GNU/Linux"/>
+        <Tag nameTag="AWS"/>
+        <Tag nameTag="Azure"/>
         <Tag nameTag="Docker"/>
         <Tag nameTag="CCNA"/>
       </template>
