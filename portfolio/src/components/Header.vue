@@ -1,6 +1,6 @@
 <template>
     <div class ="header">
-        <img src="../assets/pic3.jpg" class="avatar"/>
+        <img src="../assets/pic.jpg" class="avatar"/>
         <h1> João Freitas </h1>
     </div>
 </template>
