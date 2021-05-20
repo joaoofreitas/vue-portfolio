@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <a>© 2020 João Freitas. All rights reserved.</a>
+        <a>© 2021 João Freitas. All rights reserved.</a>
         <br/>
         <a>Powered by VueJS</a>
     </div>
